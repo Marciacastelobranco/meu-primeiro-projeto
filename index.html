@@ -4,9 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Primeiro Projeto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --roxo: #6c3ce0;
+      --rosa: #e0457b;
+      --texto: #2b2d42;
+      --texto-suave: #5c5f7a;
+      --cartao: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #f3edff 0%, #ffe9f1 100%);
+      color: var(--texto);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--roxo), var(--rosa));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: var(--texto-suave);
+    }
+
+    .sobre {
+      background: var(--cartao);
+      max-width: 600px;
+      width: 100%;
+      padding: 2.5rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(108, 60, 224, 0.15);
+      border-top: 5px solid var(--roxo);
+    }
+
+    .sobre h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--roxo);
+      margin-bottom: 1rem;
+    }
+
+    .sobre p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--texto-suave);
+    }
+
+    .sobre strong {
+      color: var(--rosa);
+    }
+  </style>
 </head>
 <body>
-  <h1>Meu Primeiro Projeto</h1>
-  <p>Seja bem-vindo(a) ao meu primeiro projeto no GitHub!</p>
+  <header>
+    <h1>Meu Primeiro Projeto</h1>
+    <p>Seja bem-vindo(a) ao meu primeiro projeto no GitHub!</p>
+  </header>
+
+  <section class="sobre">
+    <h2>Sobre mim</h2>
+    <p>
+      Olá! Eu sou a Marcia, consultora de Inteligência Artificial e dona da
+      <strong>CB3 Soluções Digitais</strong>.
+      Ajudo empresas e profissionais a usar a IA de forma prática para ganhar
+      tempo, inovar e crescer.
+    </p>
+  </section>
 </body>
 </html>
